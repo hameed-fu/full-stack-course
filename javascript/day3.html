@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript day 3</title>
+
+    
+</head>
+<body>
+    <h2>Javascript day 3</h2>
+
+  
+<h1 id="name"></h1>
+
+    <script>
+
+        let num1 = 59
+        let num2 = 3
+
+        let reminder = num1%num2
+
+
+        console.log(num1, "=",reminder)
+
+        let x = 10
+        let y = 11
+
+        //x += y
+
+        let z = ++x
+
+        let mod = x ** y
+
+        console.log(mod)
+
+        let large = x === y
+
+        console.log(large)
+
+
+        let a;
+        let b = 6
+
+        let c = a == 90 && b == 6
+        console.log(c)
+
+        let firstName = 'Usman'
+        let lastName = 'Ali'
+
+        let fullName = firstName+" "+lastName
+
+        console.log(fullName)
+
+       let obj = {
+        name: 'Usman',
+        address:'katlang',
+        age: 20,
+        phone: 909090,
+        email: 'usman@gmail.com'
+       }
+
+       console.log(obj.address, obj.email)
+
+       document.getElementById('name').innerHTML = obj.name + " "+ obj.address
+
+       
+        
+
+    </script>
+</body>
+</html>

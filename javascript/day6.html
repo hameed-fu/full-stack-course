@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6 - js</title>
+  </head>
+  <body>
+    <h2>Day 6 - js</h2>
+
+    <p id="list"></p>
+
+    <p id="demo"></p>
+
+    <script>
+      let items = ["Mobile", "Laptop", "PC", "Charger", "Tablet"];
+
+      let lgth = items.length;
+      items[0] = "Camera";
+      console.log(items[lgth - 1]);
+
+      console.log("Length of array ", lgth);
+
+      const fruits = [
+        "Banana",
+        "Orange",
+        "Apple",
+        "Mango",
+        "Pine Apple",
+        "Mango red",
+      ];
+
+      let fLen = fruits.length;
+      let text = "<ul>";
+
+      for (let i = 0; i < fLen; i++) {
+        if (i == 2) {
+          break;
+        }
+        text += "<li>" + fruits[i] + "</li>";
+      }
+
+      text += "<ul>";
+      console.log("Length of array ", text);
+      document.getElementById("list").innerHTML = text;
+
+      fruits.forEach(function (value) {
+        console.log("record of array ", value);
+      });
+
+      fruits[6] = "NEW";
+      fruits.push("Another Value");
+
+      fruits.pop();
+
+      console.log("new fruits array", fruits);
+
+      document.getElementById("demo").innerHTML = fruits.join(" - ");
+
+      const arr1 = ["Cecilie", "Lone"];
+      const arr2 = ["Emil", "Tobias", "Linus"];
+      const arr3 = ["Robin", "Morgan"];
+
+      let fullArray = arr1.concat(arr2, arr3)
+
+      console.log(fullArray)
+
+
+      let newArray = ['Mardan','Katlang', 'Swat']
+
+
+      newArray.splice(1, 0, 'Peshawar','Charsadda')
+
+      let slices  = []
+      slices = newArray.slice(1);
+
+
+      console.log("slices", slices)
+      console.log(newArray.indexOf('Katlang'))
+
+      let srt = newArray.sort()
+      console.log(newArray)
+
+
+      const numbers = [45, 4, 9, 16, 25];
+
+      let result = numbers.filter(function(value){
+          return value > 16
+        })
+        console.log("numbers", result)
+      
+    </script>
+  </body>
+</html>

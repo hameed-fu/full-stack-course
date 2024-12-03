@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript day 5</title>
+  </head>
+  <body>
+    <h2>Javascript day 5</h2>
+
+    <input type="text" onblur="leave()" onkeyup="live(this.value)" />
+    <p id="para"></p>
+
+    <input type="text" onchange="console.log('you changed ')" />
+    <input type="text" id="marks" />
+    <button onclick="cal()">Calcluate</button>
+    <script>
+
+           function calculation(x, y){
+              return x * y
+           }
+
+           let r = calculation(10, 10)
+
+           console.log(r)
+
+           function leave(){
+              console.log('you left the input')
+           }
+
+           function live(text){
+              console.log(text)
+              document.getElementById('para').innerHTML = text
+           }
+
+          let student = {
+              name: 'Shahab',
+              address: 'Katlang',
+              test: function(){
+                 let info =  this.name + " " + this.address
+
+                 return info;
+              }
+          }
+
+          console.log(student.test())
+
+
+          let num = 10;
+
+          if(num == 10){
+              console.log("condition is true")
+          }
+          else{
+              console.log("condition is false")
+          }
+
+
+          let month = 'Febkkk'
+
+          if(month == 'Jan'){
+              console.log("Month is January")
+          }
+          else if(month == 'Feb')
+          {
+              console.log("Month is February")
+
+          }
+
+          else if(month == 'Mar')
+          {
+              console.log("Month is March")
+          }
+
+          else if(month == 'Mar')
+          {
+              console.log("Month is March")
+          }
+          else if(month == 'Apr')
+          {
+              console.log("Month is April")
+          }
+
+          else{
+              console.log("Invalid month")
+          }
+
+
+          function cal(){
+            let m = document.getElementById('marks').value
+            console.log(m)
+
+            if(m <= 90){
+                console.log("Grade A")
+            }else{
+                console.log("Failed")
+            }
+          }
+
+
+          switch(month){
+              case  'Jan':
+                  //alert('Month is january')
+              break;
+
+
+              case  'Feb':
+                  //alert('Month is February')
+              break;
+
+
+              case  'Mar':
+                  //alert('Month is March')
+              break;
+
+              default:
+              //alert("Invalid month")
+
+          }
+
+          let i = 1
+
+          let table = 2;
+          for(i; i <= 10; i++){
+            if(i == 5){
+                break;
+            }
+              console.log("Number is " +i)
+          }
+
+           
+
+        let y = 6
+
+        let text = "";
+
+        while (y < 10) {
+          text += "The number is " + y;
+          console.log(y)
+          y++;
+
+      }
+
+      let z = 3
+
+      do{
+        console.log(z)
+        z++
+      }
+      while(z <= 10)
+    </script>
+  </body>
+</html>

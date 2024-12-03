@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 5 - bootstrap</title>
+
+   <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Day 5 - BS5 </h2>
+    </div>
+
+    <div class="container">
+
+      <div class="dropdown dropdown-menu-end">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Dropdown Menu Right in Bootstrap 5
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home page</a></li>
+          <li><a class="dropdown-item active" href="#">About </a></li>
+          <li><hr class="dropdown-divider"></hr></li>
+          <li><h5 class="dropdown-header">Student section</h5></li>
+          <li><span class="dropdown-item-text">Just Text</span></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><hr class="dropdown-divider"></hr></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li> 
+        </ul>
+      </div>
+
+      <div class="btn-group mt-2">
+        <button class="btn btn-primary">Button 1</button>
+        <button class="btn btn-primary">Button 2</button>
+        <button class="btn btn-primary">Button 3</button>
+        <button class="btn btn-danger  dropdown-toggle" data-bs-toggle="dropdown">Button 3</button>
+        <ul class="dropdown-menu"> 
+          <li><a class="dropdown-item" href="#">Home page</a></li>
+          <li><a class="dropdown-item active" href="#">About </a></li>
+          <li><hr class="dropdown-divider"></hr></li>
+          <li><h5 class="dropdown-header">Student section</h5></li>
+          <li><span class="dropdown-item-text">Just Text</span></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+          <li><hr class="dropdown-divider"></hr></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li> 
+        </ul>
+      </div>
+
+      <hr>
+
+      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#section1">Collaps </button>
+
+      <p id="section1" class="collaps">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas in. Officia eaque cum animi voluptates fugiat quae dolorem temporibus corporis natus repellendus, numquam atque deleniti aliquam magnam illo placeat!</p>
+
+
+
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum..
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapse2">
+              Collapsible Group Item #2
+            </a>
+          </div>
+          <div id="collapse2" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum..
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+     
+
+    <pre>
+
+
+
+
+
+
+
+
+
+    </pre>
+
+
+    
+  </body>
+</html>

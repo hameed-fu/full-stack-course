@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9</title>
+
+    <style>
+      h1 {
+        color: blue !important;
+      }
+      h1 {
+        color: red;
+      }
+
+      a[target="_blank"] {
+        background-color: aquamarine;
+        padding: 10px;
+      }
+
+      img[title~="Mardan"] {
+        border: 3px red solid;
+      }
+      input[type="text"] {
+        border: 1px blueviolet solid;
+        border-radius: 5px;
+        width: 50%;
+        height: 30px;
+        color: blue;
+      }
+
+      input[type="text"]:focus {
+        width: 60%;
+      }
+
+      input[type="button"] {
+        border: 1px blueviolet solid;
+        border-radius: 5px;
+        margin-left: 40px;
+        margin-top: 10px;
+        height: 30px;
+        width: 150px;
+        cursor: pointer;
+      }
+      input[type="button"]:hover {
+        border: 1px black solid;
+        border-radius: 5px;
+        background-color: rgb(132, 10, 245);
+        color: white;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>heading one</h1>
+
+    <a href="day1.html" target="_blank">Home</a>
+    <a href="day1.html" target="_self">Self</a>
+
+    <img
+      src="images/img-1.jpg"
+      title="Encoder Technologies Mardan"
+      width="150"
+      height="113"
+    />
+
+    <hr />
+    <form action="">
+      <label for="">Name</label>
+      <input type="text" placeholder="Name" /> <br />
+
+      <textarea>Some text...</textarea>
+      <br />
+
+      <input type="button" value="Save" />
+    </form>
+  </body>
+</html>

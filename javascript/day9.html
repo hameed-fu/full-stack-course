@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 8 - js</title>
+  </head>
+  <body>
+    <p id="date"></p>
+    <p id="date1"></p>
+    <h2 id="date3"></h2>
+    <h2 id="date4"></h2>
+    <h2 id="date5"></h2>
+    <h2 id="date6"></h2>
+
+    <script>
+      "use strict";
+      let d = new Date();
+
+      let customDate = new Date(2018, 11, 24, 10, 33, 30, 0);
+
+      document.getElementById("date").innerHTML = d.toDateString();
+      document.getElementById("date1").innerHTML = customDate;
+
+      document.getElementById("date3").innerHTML =
+        d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+      document.getElementById("date5").innerHTML = Date.now();
+
+      const d2 = new Date();
+      d2.setFullYear(2020);
+      d2.setDate(d.getDate() + 90);
+
+      document.getElementById("date6").innerHTML = d2.toDateString();
+
+      let x = 590;
+      console.log(x);
+
+
+
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        address: "Mardan",
+        id: 5566,
+        fullName: function () {
+          return this.firstName + " " + this.lastName+ " " + this.address;
+        },
+      };
+
+      console.log(person.fullName());
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 5  - css</title>
+
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+            background-color: blueviolet;
+            border-radius: 5px;
+            padding: 4px;
+
+        }
+        a:hover{
+            background-color: rgb(131, 11, 243);
+            color: white;
+            cursor: zoom-in;
+        }
+        a:active{
+            color: black;
+            border: 1px solid;
+        }
+
+        ul{
+            list-style-type: circle;
+            list-style-image: url('images/check0.png');
+            list-style-position:outside
+        }
+
+        table, th, td{
+            border: 1px solid
+        }
+
+        th, td{
+            border-bottom: 2px solid #ddd;
+        }
+
+        tr:hover{
+            background-color: lightgray;
+        }
+
+        table{
+            border-collapse:collapse;
+
+        }
+        th{
+           text-align: left;
+        }
+        td{
+            height: 40px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        caption{
+            caption-side:bottom
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <a href="day1.html">Day one</a>
+    <a href="day2.html">Day Two</a>
+    <hr>
+    <ul>
+        <li>item one</li>
+        <li>item two <br> inside the ul</li>
+        <li>item three</li>
+    </ul>
+    <hr>
+
+    
+    <table width="50%">
+       
+        <tr>
+            <th>Name</th>
+            <th style="background-color: aquamarine;">Address</th>
+        </tr>
+
+        <tr>
+            <td>ali</td>
+            <td>Mardan</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>Mardan</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>Mardan</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>Mardan fsdafasfasf fsda fds fads fas fds</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>Mardan</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>Mardan</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td></td>
+        </tr>
+
+
+        <caption>Student Info</caption>
+    </table>
+    
+</body>
+</html>

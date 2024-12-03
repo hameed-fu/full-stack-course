@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript day 4</title>
+
+    
+</head>
+<body>
+    <h2>Javascript day 4</h2>
+
+
+    <p id="para"></p>
+    <button onclick="document.getElementById('para').innerHTML = 'Click event worked'">click me</button>
+  
+    <button onmouseover="console.log('mouse over')">Mouse over</button>
+    <input type="text" onblur="console.log('you left the input')">
+
+
+    <select name="" id="" onchange="console.log(this.value)">
+        <option value="No country">Select Country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="afghanistan">afghanistan</option>
+        <option value="India">India</option>
+        <option value="China">China</option>
+    </select>
+
+    <button onclick="marks()">Click me</button>
+    <button onclick="calculation(10,20, 80)">Click me</button>
+
+    <script>
+        let x = 40;
+        function marks(){
+
+            
+            let y = 30;
+            let z = x + y;
+            console.log('Result', z)
+            console.log('i am a function')
+        }
+
+        function calculation(x, y, z = 0){
+
+           let r =  x + y + z
+
+           console.log('Total Result', r)
+        }
+
+       
+        
+    </script>
+</body>
+</html>

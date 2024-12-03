@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 - Js</title>
+  </head>
+  <body>
+    <script>
+      let str = 'pakistan is my "home" country';
+
+      let text = "It's alright.";
+      console.log(str);
+      console.log(text);
+
+      console.log(str.length);
+
+      let str1 = "lorem ipsum dolor sit amet, consectet";
+      let part = str1.slice(2, 10);
+      let part2 = str1.substring(-2, 10);
+
+      let part3 = str1.substr(0,7)
+
+      let rp = str1.replace("dolor", 'Money')
+
+      console.log(part);
+      console.log(part2);
+      console.log(part3);
+      console.log(rp);
+
+
+      let text1 = "       Hello World!       ";
+
+      let trim1 = text1.trim()
+      let trimStart = text1.trimStart()
+      let trimEnd = text1.trimEnd()
+      console.log(trimEnd)
+
+      let text2 ="a,b,c,d,e,f";
+
+      let arr = text2.split(",")
+
+      console.log(arr)
+
+      let number = 90
+      let number1 = 90111
+
+      let btc = `Hello "IT" ${number} World ${number1}`
+      console.log(btc)
+
+    </script>
+  </body>
+</html>
